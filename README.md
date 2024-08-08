@@ -14,6 +14,8 @@ Example, in 1 week, with an apr of 10% and 1 bitici in the contract, assuming th
 
 APR is an Annual Percentage rate, we can change it so that the profitability is 10% per week, but if it is an apr of 10%, as it is annual, it is divided by the other 12 months
 
+## Contact
+
 Author: Diego Oris de Roa [<diegoantunes2301@gmail.com>](mailto:diegoantunes2301@gmail.com)
 Whatsapp: [@diegoorisderoa](https://wa.me/5515996684365)
 Telegram: [@diegoorisderoa](https://t.me/diegoorisderoa)

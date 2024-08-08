@@ -16,7 +16,7 @@ APR is an Annual Percentage rate, we can change it so that the profitability is 
 
 ## Contact
 
-Author: Diego H. O. R. Antunes [<diegoantunes2301@gmail.com>](mailto:diegoantunes2301@gmail.com)
+Author: Diego H. O. R. Antunes <[<diegoantunes2301@gmail.com>](mailto:diegoantunes2301@gmail.com)>
 
 Whatsapp: [Diego H. O. R. Antunes](https://wa.me/5515996684365)
 

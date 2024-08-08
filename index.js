@@ -1038,12 +1038,24 @@ function monitorMetaMaskEvents() {
 const initUser = async () => {
     var isS = await isConnected()
     var accounts = isS.accounts
-    if(isS.isConnected){
+    if(isS.isConnected && sessionStorage.getItem("isConnected") != undefined){
         $('[onclick="connectWallet()"]').text(accounts[0].substr(0,6)+"..."+accounts[0].substr((accounts[0]).length-6,(accounts[0]).length))
-        $('[onclick="connectWallet()"]').attr("onclick", "window.open('"+explorer+"address/"+accounts[0]+"')")
+        $('[onclick="connectWallet()"]').attr("onclick", "seedetails('"+explorer+"address/"+accounts[0]+"')")
         isConnectedVar = true;
     }
 };
+
+function seedetails(a){
+    Swal.fire({title: "Account",showConfirmButton:false,html:`<div id="seedetails"><p>Address: <a href="${a}">${window.ethereum.selectedAddress.substr(0,8)}...${window.ethereum.selectedAddress.substr(-8)}</a></p><button onclick="disconnect()">Disconnect</button></div>`})
+    setInterval(() => {
+        $("body").attr("class", "");
+    }, 200);
+}
+
+function disconnect(a){
+    sessionStorage.removeItem("isConnected")
+    document.location.reload(true)
+}
 
 async function isConnected(){
     if(!window.ethereum){
@@ -1100,6 +1112,7 @@ async function connectMetaMask() {
             method: 'eth_requestAccounts',
             params: [{ eth_accounts: {} }]
         });
+        sessionStorage.setItem("isConnected","true")
         console.log('Conectado com sucesso!', accounts);
         return accounts;
     } catch (error) {

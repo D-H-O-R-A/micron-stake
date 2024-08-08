@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: MIT
+// Author: Diego H. O. R. Antunes <diegoantunes2301@gmail.com>
 pragma solidity ^0.8.0;
 
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v4.7/contracts/token/ERC20/IERC20.sol";
